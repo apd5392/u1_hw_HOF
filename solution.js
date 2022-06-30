@@ -94,7 +94,10 @@ function joinStrings(strings) {
 
 //Bonus
 function sortObjectsByValue(objs) {
-
+  let newValue = objs.sort((a, b) => {
+    return a.value - b.value
+  })
+  return newValue
 }
   /**
    * @param objs => [{value: 1}, {value:2}, {value:23}]
